@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-08-12_002",
+  "commitment_sha256": "4e17f7abe36253206fe0844054ccba4459160e5fd780ad3fe2ff3095f3e12875",
+  "salt": "22c635f04318a5009bc605ef1979c044",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-08-12_002",
+    "call_date": "2026-08-12",
+    "asset": "CASHCAT",
+    "direction": "spot",
+    "category": "crypto",
+    "asymmetric_tier": "degen",
+    "price_at_call": "0.14166",
+    "thesis": "Cash Cat ($CASHCAT) post-listing reset + launchpad flywheel. y22_trades swapped 100k USDC into 692k CASHCAT reading the 200m->100m 'change of hands' candle as short-term flippers being replaced by long-term holders. tontheneko flags the launchpad ('Let's Cash') mechanic where all fees are used to buy/long CASHCAT and airdrop back to LONGCAT holders -- a reflexive buy-flow engine -- and notes Tradermayne bought it (alongside ANSEM, PIPEDOG) as a potential 'new Robinhood multi-million runner'. Two distinct accounts converging on the same still-unconfirmed early narrative. Degen accumulation -- exit discipline is SELL INTO HYPE, not hold-forever.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "10x-100x"
+  },
+  "outcome": {
+    "exit_date": "2026-09-07",
+    "days_held": 26,
+    "realized_return_pct": 92.46,
+    "realized_exit_price": 0.272645,
+    "max_drawdown_pct": 0.0,
+    "exit_basis": "owner_directed_peak_close",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "confirmed",
+    "catalyst_status": "occurred",
+    "thesis_note": "CLOSED +92.46% (26d). Owner-directed close at hype-cycle peak (book the win). These sat in the 'peak' zone of the hype curve — narrative fully priced, thesis played out — so we lock the realized gain rather than round-trip through the reality-check leg. All six are momentum/narrative-driven spot names where the durable catalyst has already landed and further upside is now hype-dependent, not thesis-dependent.",
+    "key_events": [
+      "2026-08-26: new ATH ~$0.254, $206M vol, +80-98% in week after Aug 12 reset call",
+      "2026-09: ~$0.21 / $210M cap, all 1B circulating, sustained momentum"
+    ],
+    "review_count": 2
+  },
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

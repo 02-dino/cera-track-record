@@ -1,0 +1,3 @@
+# the sealed store (records + salts for OPEN calls) must NEVER land here
+.sealed/
+*.salt

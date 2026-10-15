@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-08-07_004",
+  "commitment_sha256": "6f7eab81bd26f309a70c2c01492002b936366c62a2219a3a4cec68d03dbe7135",
+  "salt": "50512d429d5daf9a23a0d525e37c0c9e",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-08-07_004",
+    "call_date": "2026-08-07",
+    "asset": "PUMP",
+    "direction": "spot",
+    "category": "crypto",
+    "asymmetric_tier": "degen",
+    "price_at_call": "0.002301",
+    "thesis": "real_y22 frames PUMP as the cleanest proxy on rising on-chain activity, arguing the two durable blockchain use-cases are stablecoins and casino/gambling (plus SoV), and that the breakout app of crypto is gambling combined with socialFi. PUMP has very durable revenue, a ~$1B war chest, and a liquid token as an alignment unit; the team appears newly determined/'on the war path.' Positioned as a next-cycle investment. Dissent noted: Evan_ss6 flags a large recent PUMP unlock and that 'unlocks are not as easy a trade as they used to be' - a real supply headwind. Accumulate spot (unleveraged) to hold through volatility rather than get wicked out on a perp.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "10x-100x"
+  },
+  "outcome": {
+    "exit_date": "2026-09-07",
+    "days_held": 31,
+    "realized_return_pct": 83.83,
+    "realized_exit_price": 0.00423,
+    "max_drawdown_pct": 2.74,
+    "exit_basis": "owner_directed_peak_close",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "confirmed",
+    "catalyst_status": "occurred",
+    "thesis_note": "CLOSED +83.83% (31d). Owner-directed close at hype-cycle peak (book the win). These sat in the 'peak' zone of the hype curve — narrative fully priced, thesis played out — so we lock the realized gain rather than round-trip through the reality-check leg. All six are momentum/narrative-driven spot names where the durable catalyst has already landed and further upside is now hype-dependent, not thesis-dependent.",
+    "key_events": [
+      "2026-08-25: Pump.fun $2.4M single-day revenue (highest since Sep 2025); weekly $13.68M",
+      "2026-08-28: $1.38M burned (271M PUMP) ~50-55% of daily rev; 30d rev annualizes ~$460-500M"
+    ],
+    "review_count": 2
+  },
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

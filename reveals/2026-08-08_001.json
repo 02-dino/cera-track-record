@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-08-08_001",
+  "commitment_sha256": "1a2421c2e2f8892b4435fdf3d8644509ff88d21b1eb53ede7c49d71d8668a505",
+  "salt": "193304c3efc8e94db5582fe4b63ab62b",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-08-08_001",
+    "call_date": "2026-08-08",
+    "asset": "PONS",
+    "direction": "spot",
+    "category": "crypto",
+    "asymmetric_tier": "low_conviction",
+    "price_at_call": "0.02665",
+    "thesis": "PONS is a Robinhood-chain token whose burn engine functions as a live revenue meter: fees accumulate, swap, and burn roughly every ~15 minutes, so the burn rate mechanically tracks trading volume in real time, with buyback pressure concentrated in US hours. Over 204M (~20.4% of supply) has already been burned and a further $500k+ has queued for burning. This is a genuinely under-covered, structurally deflationary asset tied to real on-chain activity rather than pure narrative rotation — the value-accrual mechanism is a fundamental fact that a single day's price print cannot falsify. Accumulate on the deflationary/cash-flow-linked thesis; unleveraged to hold through volatility without liquidation risk.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "5x-50x"
+  },
+  "outcome": {
+    "exit_date": "2026-09-07",
+    "days_held": 30,
+    "realized_return_pct": 1343.34,
+    "realized_exit_price": 0.38465,
+    "max_drawdown_pct": 0.0,
+    "exit_basis": "owner_directed_peak_close",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "confirmed",
+    "catalyst_status": "occurred",
+    "thesis_note": "CLOSED +1343.34% (30d). Owner-directed close at hype-cycle peak (book the win). These sat in the 'peak' zone of the hype curve — narrative fully priced, thesis played out — so we lock the realized gain rather than round-trip through the reality-check leg. All six are momentum/narrative-driven spot names where the durable catalyst has already landed and further upside is now hype-dependent, not thesis-dependent.",
+    "key_events": [
+      "2026-08-12: ~27% of supply (268M/1B) burned; Robinhood Chain fastest-growing launchpad by 24h volume",
+      "2026-08-29: PONS surging on active Robinhood Chain; #1 by 24h volume ($14.11M)"
+    ],
+    "review_count": 2
+  },
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

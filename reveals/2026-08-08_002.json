@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-08-08_002",
+  "commitment_sha256": "bc7eca5eb33e848ab89ab8ebe161c494187337dab7dd8a693b37b32ebc333976",
+  "salt": "2c838cce439c610a20fa6305e1682b8a",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-08-08_002",
+    "call_date": "2026-08-08",
+    "asset": "CATE",
+    "direction": "spot",
+    "category": "crypto",
+    "asymmetric_tier": "degen",
+    "price_at_call": "0.02738",
+    "thesis": "CASHCAT/CATE (cash-cat native) ran to $220m+ on pure listing anticipation, then round-tripped to ~$100m after Robinhood actually delivered the listing — a heavily front-run CEX debut on an exchange that rarely lists memes. Multiple accounts (zinceth, solstice, 0xIT4I) converge that the post-listing dump is overdone, insider/front-running complaints are surfacing (a potential re-rate catalyst), and a funding long-squeeze is unwinding on the perp. The bet is that RH-listed liquidity plus the insider controversy re-attracts flow and pushes native back toward and beyond prior highs. Pure meme/attention play — exit into hype, not fundamentals.",
+    "invalidation_type": "technical",
+    "return_multiple_range": "10x-100x"
+  },
+  "outcome": {
+    "exit_date": "2026-09-07",
+    "days_held": 30,
+    "realized_return_pct": 170.12,
+    "realized_exit_price": 0.07396,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_peak_close",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "confirmed_early",
+    "catalyst_status": "occurred",
+    "thesis_note": "CLOSED +170.12% (30d). Owner-directed close at hype-cycle peak (book the win). These sat in the 'peak' zone of the hype curve — narrative fully priced, thesis played out — so we lock the realized gain rather than round-trip through the reality-check leg. All six are momentum/narrative-driven spot names where the durable catalyst has already landed and further upside is now hype-dependent, not thesis-dependent.",
+    "key_events": [
+      "2026-08-06: Robinhood listed CASHCAT (+151% to $0.2143, $92.6M vol) — catalyst landed 2 days before call",
+      "2026-08-26: new ATH ~$0.254, $206M vol, +80-98% on week"
+    ],
+    "review_count": 2
+  },
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

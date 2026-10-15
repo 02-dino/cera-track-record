@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "basis": "closed_calls_only",
+  "n_closed": 6,
+  "n_priced": 6,
+  "wins": 6,
+  "losses": 0,
+  "scratch": 0,
+  "win_rate": 1.0,
+  "avg_return_pct": 303.7,
+  "best_pct": 1343.34,
+  "worst_pct": 23.83,
+  "sum_win_pct": 1822.18,
+  "sum_loss_pct": 0,
+  "profit_factor": null,
+  "exit_basis_breakdown": {
+    "owner_directed_peak_close": 6
+  },
+  "caveats": [
+    "ZERO measured losses in the closed book. A 100% win rate here is NOT a hit rate — read the exit_basis breakdown below before quoting it.",
+    "6/6 closed calls used exit_basis='owner_directed_peak_close' — exited by hand at a favourable point, not by a pre-written trigger. Returns are therefore exit-timing dependent.",
+    "Sample is 6 closed calls. Too small for profit factor or expectancy to be stable; treat as a log, not a statistic."
+  ]
+}

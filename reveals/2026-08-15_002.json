@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-08-15_002",
+  "commitment_sha256": "c447028a3c675e219ce1e770f90f1b5378220f930e104dda24b064a53ab8c92f",
+  "salt": "efeb969d43f8112b817bea462bb31700",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-08-15_002",
+    "call_date": "2026-08-15",
+    "asset": "VIRTUAL",
+    "direction": "long",
+    "category": "crypto",
+    "asymmetric_tier": null,
+    "price_at_call": "0.56082",
+    "thesis": "Pure robotics-x-AI narrative beta on Unitree's imminent Shanghai STAR-market IPO (~Aug 19), which would be the first humanoid-robotics listing at ~$9B pricing with only ~10% float — and small-float STAR debuts have gone vertical recently (CXMT +466% on day one two weeks ago). Retail outside China cannot buy Unitree stock, so VIRTUAL (whose robotics division is Unitree's data partner running 30+ of their robots, the most Unitree training data outside China) is effectively the only liquid Unitree beta token available. Setup carries dated binary catalysts, token ~87% off ATH, fully unlocked supply, plus a secondary narrative ($200m+ agent volume on RH chain in month one). Aggressive catalyst-window expression; if it doesn't move within days of the debut the thesis is dead.",
+    "invalidation_type": "technical",
+    "return_multiple_range": null
+  },
+  "outcome": {
+    "exit_date": "2026-09-07",
+    "days_held": 23,
+    "realized_return_pct": 23.83,
+    "realized_exit_price": 0.694437,
+    "max_drawdown_pct": 2.25,
+    "exit_basis": "owner_directed_peak_close",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "strongly_confirmed",
+    "catalyst_status": "occurred",
+    "thesis_note": "CLOSED +23.83% (23d). Owner-directed close at hype-cycle peak (book the win). These sat in the 'peak' zone of the hype curve — narrative fully priced, thesis played out — so we lock the realized gain rather than round-trip through the reality-check leg. All six are momentum/narrative-driven spot names where the durable catalyst has already landed and further upside is now hype-dependent, not thesis-dependent.",
+    "key_events": [
+      "2026-08-19: Unitree STAR IPO debuted exactly on date — +629% intraday, closed +487% at ~$53B, 8,000x oversubscribed",
+      "2026-08-19: robotics/physical-AI sector rallied on debut (Ouster, Teradyne)"
+    ],
+    "review_count": 2
+  },
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}
