@@ -1,0 +1,65 @@
+name: verify
+
+# WHY CI: every number in this repo is produced by the desk, which makes it an
+# assertion. This workflow re-derives them on GitHub's runners — hardware the desk
+# does not own — against the commit as GitHub received it. A green check is a third
+# party agreeing with the arithmetic. A red check is a public disagreement that
+# cannot be quietly deleted: the run log stays even if the commit is amended.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # Daily, so a tampered history is caught even with no new commits.
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # FULL history is mandatory: C2 (no silent deletion) and C3 (grade honesty)
+          # both read git log. A shallow clone would silently skip the two checks
+          # that matter most, and still show green.
+          fetch-depth: 0
+
+      - name: Assert full history
+        run: |
+          if [ -f .git/shallow ]; then
+            echo "::error::shallow clone — C2/C3 cannot run"; exit 1
+          fi
+          echo "commits: $(git rev-list --count HEAD)"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Replay scorer (stdlib only, offline)
+        run: python3 oracle/replay.py
+
+      - name: Machine-readable result
+        if: always()
+        run: python3 oracle/replay.py --json > replay-result.json || true
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo '## Replay result'
+            echo '```json'
+            cat replay-result.json
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: replay-result
+          path: replay-result.json
+          retention-days: 90

@@ -25,20 +25,44 @@ EOF
 `FAIL` means the published record is not the record that was committed. That is the
 whole point of the exercise.
 
-## 2. Check *when* the commitment was made
+## 2. Check *when* the commitment was made — the one that actually matters
 
-The hash alone proves the record is unchanged. The timestamp comes from git:
+The hash alone proves the record is unchanged. It does **not** prove the record was
+written before the outcome was known. Only git timestamps answer that:
 
 ```bash
 git log --oneline -S"<commitment_sha256>" -- commitments.json
 ```
 
-The **earliest** commit returned is when the desk first published that hash — i.e.
-before the outcome existed. Compare it against `sealed_record.call_date` and against
-`outcome.exit_date`. A commitment that first appears *after* the exit date is
-worthless and should be read as such.
+The **earliest** commit returned is when the desk first published that hash. Compare
+it against `outcome.exit_date`:
+
+| Earliest commit vs exit date | What the call is worth |
+|---|---|
+| before the exit | **evidence** — the desk was locked in before the result existed |
+| after the exit | **memoir** — self-reported history, proves nothing about timing |
+
+Every reveal states which it is, in `commitment_grade`: `pre_committed` or
+`retroactive_seed`. Do not take that field on faith either — `oracle/replay.py`
+re-derives it from git and **fails** if a call claims `pre_committed` without history
+to back it (check C3). Downgrading yourself is allowed; claiming unearned proof is not.
+
+As of the first publish, **all 6 closed calls are `retroactive_seed`** — this repo
+did not exist when they were made, so none of them are proven. The 26 open
+commitments are the first batch that can ever earn `pre_committed`.
 
 Commit timestamps are written by GitHub, not by the desk.
+
+## 2b. Run the whole scorer yourself
+
+```bash
+python3 oracle/replay.py          # human-readable, exits non-zero on any failure
+python3 oracle/replay.py --json   # machine-readable
+```
+
+Stdlib only, no network — it can only read what is in the tree. The same script runs
+on GitHub's runners (`.github/workflows/verify.yml`) on every push and daily, so a
+quietly tampered history goes red on hardware the desk does not control.
 
 ## 3. Check that nothing was quietly dropped
 
@@ -79,3 +103,5 @@ Compare against `n_closed`, `wins`, `avg_return_pct`.
   was committed on that date — the asset is deliberately hidden until close.
 - **Not** that the closed set is representative. See `caveats[]` in `performance.json`:
   hand-timed exits inflate the win rate, and the sample is small.
+- **Not** — for any call graded `retroactive_seed` — anything at all beyond "this is
+  what the desk says happened". Read those as a claim, not a proof.

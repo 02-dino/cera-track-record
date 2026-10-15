@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-15T14:00:33Z",
+  "generated_at": "2026-10-15T14:09:05Z",
   "disclosure_policy": "OPEN calls are committed by hash only (VIP-first: the live book stays private). The asset, direction, thesis and entry are revealed ONLY after the call is closed. See reveals/ for closed calls and VERIFY.md for how to check a reveal against its original commitment.",
   "open_count": 26,
   "commitments": [
@@ -9,182 +9,182 @@
       "commitment_sha256": "1052fbe1c89dd8200445b13de8075d88ca4fe62142ba4012378f5b9027e1b62b",
       "call_date": "2026-08-07",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-08-08_003",
       "commitment_sha256": "4c1d4d74ac7677e66d1f1c9ee9973747508b56245995f4a58344bf82345b666f",
       "call_date": "2026-08-26",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-08-10_002",
       "commitment_sha256": "c79e54f25883cfeefb83293de5765d069a3a248c8d6fa2b330d067be76dc769c",
       "call_date": "2026-08-23",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-08-14_003",
       "commitment_sha256": "e1080c5891e87fb32aede35d4e78e98e51a603eb41bb6f9080c9d90a57fdb710",
       "call_date": "2026-08-23",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-08-24_004",
       "commitment_sha256": "248086bff2e747df2ebac27c27f72c1a994f613a3f0e7afddf686c4d939a48f5",
       "call_date": "2026-08-24",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-08-31_001",
       "commitment_sha256": "5f430fdf5c61c0359ec3fd5f61c92d6387941d18db277a69ddfa7309633e8231",
       "call_date": "2026-08-31",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-09-03_003",
       "commitment_sha256": "891eee525c9f1545e2d8de4df402075b5c714d47b471dd963def764e3bc7c75f",
       "call_date": "2026-09-03",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-09-04_001",
       "commitment_sha256": "2017a7af730a2680aae85e558768a0d0bc07dcf63b107a37d3c96b5162d73e02",
       "call_date": "2026-09-04",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-09-06_001",
       "commitment_sha256": "7ca20d2d88b437614edcd5f00540a9aad9a6a85b2c2dd95c234c8f3fbd9b391d",
       "call_date": "2026-09-06",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-09-09_001",
       "commitment_sha256": "b5e620f76dc8d5e05e83a7b3744ab2458dac3ccab13a0224c1f854f501c826c0",
       "call_date": "2026-09-09",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-09-20_001",
       "commitment_sha256": "070a87675990494a9665e9d679e0cc27f7b05cc13ba70f070631abc1ec70ac0b",
       "call_date": "2026-09-20",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-09-23_001",
       "commitment_sha256": "41026b8ea3bfabd00943dd76d21750c1eabb9bd3136dbbaaeaa8200a1a2d568d",
       "call_date": "2026-09-23",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-09-27_004",
       "commitment_sha256": "0c825e639afaad85f680db1e8c1200bb3a61b7757b3d2c272c0a3df46bb7d10a",
       "call_date": "2026-09-27",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-09-29_001",
       "commitment_sha256": "4cb8d582e75d4e40f8582d24ac23a6ccf55d80472167c8e36b528c9bc1b2e9c9",
       "call_date": "2026-09-29",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-09-30_001",
       "commitment_sha256": "c04672abdb461fb4c77bee17d211eec00d4cce33d290f96d881aab00023145a4",
       "call_date": "2026-09-30",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-10-01_004",
       "commitment_sha256": "fb8a033761aa63138e80c1649d5dbbe6318801ada208df861d28d4ac210a6d0c",
       "call_date": "2026-10-01",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-10-03_002",
       "commitment_sha256": "cfdab532a4727e9b3262b466e234f3b5b6f899d46820e4ea2be3a8382f384116",
       "call_date": "2026-10-03",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-10-05_001",
       "commitment_sha256": "4def0aae5917129e62720d67fb66907f98e240b40f9f43563b1fd23d99620b7f",
       "call_date": "2026-10-05",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-10-06_001",
       "commitment_sha256": "884b8d8d5ccb9f4ed0d25234dc716405903b7d5d005f129937936c898d3baca4",
       "call_date": "2026-10-06",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-10-07_005",
       "commitment_sha256": "896471dbd50c2e8b1bf2aa0d0aadb6f03f02d62f2f30df671b87258e27a898f2",
       "call_date": "2026-10-07",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-10-09_005",
       "commitment_sha256": "5e5ec5727833c3df758e60758da6645d1b1c5f13dff200822980cbe3e55e9c87",
       "call_date": "2026-10-09",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-10-10_002",
       "commitment_sha256": "946d10b6ad976039c0b90eb95504144e08e3677f2666c4e4a0723b16b9a1d388",
       "call_date": "2026-10-10",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-10-11_004",
       "commitment_sha256": "217b9ab1ffcfa8098cb820a185d205829173c10116b64450ff8becbc625fabaa",
       "call_date": "2026-10-11",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-10-12_003",
       "commitment_sha256": "216296894efe740ed18200b835fc358af21a07e06aeb27bc34fb954d2b8806a2",
       "call_date": "2026-10-12",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-10-13_001",
       "commitment_sha256": "3e0cc77999d9531e009f604f5dd8fe2d9e19beab2c58441d12aee36046135261",
       "call_date": "2026-10-13",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     },
     {
       "idea_id": "2026-10-15_002",
       "commitment_sha256": "ab9069b457461f4762765d2be9477dfa2924ee904347611d13b64df95dc36cde",
       "call_date": "2026-10-15",
       "status": "open",
-      "first_committed": null
+      "first_committed": "2026-10-15T21:03:33+07:00"
     }
   ]
 }

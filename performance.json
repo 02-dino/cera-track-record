@@ -16,7 +16,11 @@
   "exit_basis_breakdown": {
     "owner_directed_peak_close": 6
   },
+  "commitment_grade_breakdown": {
+    "retroactive_seed": 6
+  },
   "caveats": [
+    "6/6 closed calls are commitment_grade='retroactive_seed': their hash was first published AFTER the exit was known, so they are SELF-REPORTED history, not cryptographic evidence. Only calls committed while still open can be proven. Read them as the desk's own account.",
     "ZERO measured losses in the closed book. A 100% win rate here is NOT a hit rate — read the exit_basis breakdown below before quoting it.",
     "6/6 closed calls used exit_basis='owner_directed_peak_close' — exited by hand at a favourable point, not by a pre-written trigger. Returns are therefore exit-timing dependent.",
     "Sample is 6 closed calls. Too small for profit factor or expectancy to be stable; treat as a log, not a statistic."
