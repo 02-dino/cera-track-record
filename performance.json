@@ -23,8 +23,8 @@
     "retroactive_seed": 14
   },
   "caveats": [
-    "14/40 closed calls are commitment_grade='retroactive_seed': their hash was first published AFTER the exit was known, so they are SELF-REPORTED history, not cryptographic evidence. Only calls committed while still open can be proven. Read them as the desk's own account.",
-    "6/40 closed calls used exit_basis='owner_directed_peak_close' — exited by hand at a favourable point, not by a pre-written trigger. Returns are therefore exit-timing dependent.",
-    "1 committed call(s) VOIDED for having no verifiable entry price (2026-10-11_004). Revealed in full rather than dropped, but excluded from returns because no return can be measured without an entry."
+    "14/40 closed ideas are commitment_grade='retroactive_seed': their hash was first published AFTER the exit was known, so they are SELF-REPORTED history, not cryptographic evidence. Only ideas committed while still open can be proven. Read them as the desk's own account.",
+    "6/40 closed ideas used exit_basis='owner_directed_peak_close' — exited by hand at a favourable point, not by a pre-written trigger. Returns are therefore exit-timing dependent.",
+    "1 committed idea(s) VOIDED for having no verifiable entry price (2026-10-11_004). Revealed in full rather than dropped, but excluded from returns because no return can be measured without an entry."
   ]
 }

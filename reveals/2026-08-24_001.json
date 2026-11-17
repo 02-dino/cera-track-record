@@ -34,7 +34,7 @@
     "review_count": 2
   },
   "commitment_grade": "retroactive_seed",
-  "commitment_grade_note": "No commitment for this call exists in git history prior to this publish: the record was written after the outcome was known. Self-reported, NOT cryptographically proven.",
+  "commitment_grade_note": "No commitment for this idea exists in git history prior to this publish: the record was written after the outcome was known. Self-reported, NOT cryptographically proven.",
   "first_committed": null,
   "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
 }

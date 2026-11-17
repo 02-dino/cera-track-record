@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-17T03:10:07Z",
-  "disclosure_policy": "OPEN calls are committed by hash only (VIP-first: the live book stays private). The asset, direction, thesis and entry are revealed ONLY after the call is closed. See reveals/ for closed calls and VERIFY.md for how to check a reveal against its original commitment.",
+  "generated_at": "2026-11-17T03:33:47Z",
+  "disclosure_policy": "OPEN ideas are committed by hash only (VIP-first: the live book stays private). The asset, direction, thesis and entry are revealed ONLY after the idea is closed. See reveals/ for closed ideas and VERIFY.md for how to check a reveal against its original commitment.",
   "open_count": 0,
   "commitments": []
 }

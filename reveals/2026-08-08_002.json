@@ -28,13 +28,13 @@
     "catalyst_status": "occurred",
     "thesis_note": "CLOSED +170.12% (30d). Owner-directed close at hype-cycle peak (book the win). These sat in the 'peak' zone of the hype curve — narrative fully priced, thesis played out — so we lock the realized gain rather than round-trip through the reality-check leg. All six are momentum/narrative-driven spot names where the durable catalyst has already landed and further upside is now hype-dependent, not thesis-dependent.",
     "key_events": [
-      "2026-08-06: Robinhood listed CASHCAT (+151% to $0.2143, $92.6M vol) — catalyst landed 2 days before call",
+      "2026-08-06: Robinhood listed CASHCAT (+151% to $0.2143, $92.6M vol) — catalyst landed 2 days before the idea",
       "2026-08-26: new ATH ~$0.254, $206M vol, +80-98% on week"
     ],
     "review_count": 2
   },
   "commitment_grade": "retroactive_seed",
-  "commitment_grade_note": "No commitment for this call exists in git history prior to this publish: the record was written after the outcome was known. Self-reported, NOT cryptographically proven.",
+  "commitment_grade_note": "No commitment for this idea exists in git history prior to this publish: the record was written after the outcome was known. Self-reported, NOT cryptographically proven.",
   "first_committed": null,
   "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
 }

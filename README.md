@@ -1,16 +1,16 @@
 # cera-track-record
 
-Tamper-evident trade-call ledger for the Cera / KomuniTech alpha desk.
+Tamper-evident trade-idea ledger for the Cera / KomuniTech alpha desk.
 
 **Disclosure policy (VIP-first):**
 
-| Call state | What is published here |
+| Idea state | What is published here |
 |---|---|
 | **Open** | `commitments.json` — a SHA-256 hash only. No asset, no direction, no thesis, no entry price. |
 | **Closed** | `reveals/<idea_id>.json` — the full sealed record *plus* its salt, so the earlier hash can be recomputed. |
-| **Aggregate** | `performance.json` — closed calls only, with caveats attached. |
+| **Aggregate** | `performance.json` — closed ideas only, with caveats attached. |
 
-The live book stays private. A call becomes readable **after** it is closed, never before.
+The live book stays private. An idea becomes readable **after** it is closed, never before.
 
 ---
 
@@ -19,25 +19,25 @@ The live book stays private. A call becomes readable **after** it is closed, nev
 A screenshot of a win proves nothing: it is written after the outcome is known.
 Here the order is inverted.
 
-1. When a call is made, the desk seals the record (asset, direction, date, entry, thesis)
-   with a per-call random salt and publishes **only** `sha256(record || salt)` into
+1. When an idea is published, the desk seals the record (asset, direction, date, entry, thesis)
+   with a per-idea random salt and publishes **only** `sha256(record || salt)` into
    `commitments.json`.
 2. That hash lands in a git commit on GitHub — timestamped by a server the desk does
    not control.
-3. When the call closes, the record and the salt are published in `reveals/`.
+3. When the idea closes, the record and the salt are published in `reveals/`.
    Anyone can recompute the hash and find the commit where it first appeared.
 
 **The seed batch is an exception, and it is labelled as one.** The first 6 closed
-calls were published *after* they had already closed, because this repo did not exist
+ideas were published *after* they had already closed, because this repo did not exist
 when they were made. Their hash therefore proves nothing about timing, so each one
 carries `commitment_grade: "retroactive_seed"` and the aggregate says so in its
-caveats. Calls committed while still open will carry `commitment_grade:
-"pre_committed"` instead — and the CI scorer fails the build if a call claims that
+caveats. Ideas committed while still open will carry `commitment_grade:
+"pre_committed"` instead — and the CI scorer fails the build if an idea claims that
 grade without git history to back it. Self-downgrading is always allowed; claiming
 unearned proof is not.
 
-Rewriting a call after the fact changes the hash. The mismatch is visible in the diff.
-Deleting an uncomfortable call removes a hash that is already in git history — also
+Rewriting an idea after the fact changes the hash. The mismatch is visible in the diff.
+Deleting an uncomfortable idea removes a hash that is already in git history — also
 visible. The guarantee is not "trust the desk"; it is "check the diff".
 
 The salt exists because a short record (ticker + direction + date) is brute-forceable
@@ -50,13 +50,13 @@ See **VERIFY.md** for the exact commands.
 
 ## Files
 
-- `commitments.json` — open calls, hash-only. Includes `call_date` (the claim being
-  made is *"a call existed on this date"*), status, and the commit date the hash
+- `commitments.json` — open ideas, hash-only. Includes `call_date` (the claim being
+  made is *"an idea existed on this date"*), status, and the commit date the hash
   first appeared.
-- `reveals/<idea_id>.json` — one file per closed call: sealed record, salt,
+- `reveals/<idea_id>.json` — one file per closed idea: sealed record, salt,
   the original commitment hash, and the outcome (exit date, realized return,
   exit basis, thesis accuracy).
-- `performance.json` — aggregate over closed calls only, with `caveats[]`.
+- `performance.json` — aggregate over closed ideas only, with `caveats[]`.
 - `oracle/replay.py` — the independent scorer. Stdlib-only and offline, so it can
   only read what is in the tree. Six checks: hash integrity, no silent deletion,
   grade honesty, aggregate honesty, disclosure leak, secret hygiene. Run it yourself:
@@ -66,15 +66,15 @@ See **VERIFY.md** for the exact commands.
 
 ## Current state
 Read `performance.json` before quoting any number from it. On 2026-11-17 the desk
-closed its entire open book by hand (AI trade unwind), so every call committed on
-2026-10-15 is now revealed. The book contains **40 closed calls**:
+closed its entire open book by hand (AI trade unwind), so every idea committed on
+2026-10-15 is now revealed. The book contains **40 closed ideas**:
 39 priced, 10 wins, 28 losses, win rate
 25.6%, average +26.93%, profit factor 2.07.
-- **26 are `pre_committed`**: their hash was in git while the call was
+- **26 are `pre_committed`**: their hash was in git while the idea was
   still open, so they are independently checkable.
 - **14 are `retroactive_seed`**: published after the outcome was known,
   so they are self-reported.
-- **1 call is voided** (no verifiable entry price). It is revealed in full rather than
+- **1 idea is voided** (no verifiable entry price). It is revealed in full rather than
   dropped, and excluded from returns.
 - Exits are `owner_directed_unwind` / `owner_directed_peak_close`, i.e. by hand, not
   by a pre-written trigger. Returns are exit-timing dependent; see `caveats[]`.

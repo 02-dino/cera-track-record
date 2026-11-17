@@ -1,4 +1,4 @@
-# How to verify a call
+# How to verify an idea
 
 Everything below runs offline against this repo. No trust in the desk required.
 
@@ -37,17 +37,17 @@ git log --oneline -S"<commitment_sha256>" -- commitments.json
 The **earliest** commit returned is when the desk first published that hash. Compare
 it against `outcome.exit_date`:
 
-| Earliest commit vs exit date | What the call is worth |
+| Earliest commit vs exit date | What the idea is worth |
 |---|---|
 | before the exit | **evidence** — the desk was locked in before the result existed |
 | after the exit | **memoir** — self-reported history, proves nothing about timing |
 
 Every reveal states which it is, in `commitment_grade`: `pre_committed` or
 `retroactive_seed`. Do not take that field on faith either — `oracle/replay.py`
-re-derives it from git and **fails** if a call claims `pre_committed` without history
+re-derives it from git and **fails** if an idea claims `pre_committed` without history
 to back it (check C3). Downgrading yourself is allowed; claiming unearned proof is not.
 
-As of the first publish, **all 6 closed calls are `retroactive_seed`** — this repo
+As of the first publish, **all 6 closed ideas are `retroactive_seed`** — this repo
 did not exist when they were made, so none of them are proven. The 26 open
 commitments are the first batch that can ever earn `pre_committed`.
 
@@ -67,7 +67,7 @@ quietly tampered history goes red on hardware the desk does not control.
 ## 3. Check that nothing was quietly dropped
 
 A hash that exists in an older `commitments.json` but is absent from both the current
-`commitments.json` and `reveals/` is a deleted call:
+`commitments.json` and `reveals/` is a deleted idea:
 
 ```bash
 git log -p --follow commitments.json | grep commitment_sha256 | \
@@ -76,7 +76,7 @@ cat commitments.json reveals/*.json | grep -o '[0-9a-f]\{64\}' | sort -u > /tmp/
 comm -23 /tmp/all_hashes /tmp/live
 ```
 
-Empty output = no call has ever been removed. Non-empty output = ask what the missing
+Empty output = no idea has ever been removed. Non-empty output = ask what the missing
 hash was.
 
 ## 4. Check the aggregate matches the reveals
@@ -98,10 +98,10 @@ Compare against `n_closed`, `wins`, `avg_return_pct`.
 
 ## What this does NOT prove
 
-- **Not** that the calls were traded with real size. It proves what was claimed and when.
-- **Not** that open calls are good. An open commitment proves only that *something*
+- **Not** that the ideas were traded with real size. It proves what was claimed and when.
+- **Not** that open ideas are good. An open commitment proves only that *something*
   was committed on that date — the asset is deliberately hidden until close.
 - **Not** that the closed set is representative. See `caveats[]` in `performance.json`:
   hand-timed exits inflate the win rate, and the sample is small.
-- **Not** — for any call graded `retroactive_seed` — anything at all beyond "this is
+- **Not** — for any idea graded `retroactive_seed` — anything at all beyond "this is
   what the desk says happened". Read those as a claim, not a proof.

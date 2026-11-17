@@ -16,10 +16,10 @@ is in the tree.
 CHECKS (any failure exits non-zero and fails CI):
   C1 hash integrity     — every reveal recomputes to its committed hash
   C2 no silent deletion — every hash ever in commitments.json is still live
-  C3 grade honesty     — any call CLAIMING pre_committed really was, per git history
+  C3 grade honesty     — any idea CLAIMING pre_committed really was, per git history
   C4 aggregate honesty  — performance.json == recomputed from reveals/
   C5 disclosure leak    — open commitments carry no asset/thesis/price
-  C6 secret hygiene     — no salts for OPEN calls anywhere in the tree
+  C6 secret hygiene     — no salts for OPEN ideas anywhere in the tree
 
 Usage: python3 oracle/replay.py [--json]
 """
@@ -38,7 +38,7 @@ COMMITMENTS = ROOT / "commitments.json"
 PERFORMANCE = ROOT / "performance.json"
 
 # The ONLY keys an open commitment may carry. Anything else is a disclosure leak:
-# the whole promise is that an open call is unreadable until it closes.
+# the whole promise is that an open idea is unreadable until it closes.
 ALLOWED_OPEN_KEYS = {
     "idea_id", "commitment_sha256", "call_date", "status", "first_committed",
 }
@@ -76,7 +76,7 @@ def git(*args: str) -> str:
 # ---------------------------------------------------------------- C1
 def check_hashes(reveals: list[dict]) -> int:
     """A reveal that does not recompute means the published record is NOT the record
-    that was committed — i.e. the call was edited after the fact."""
+    that was committed — i.e. the idea was edited after the fact."""
     ok = 0
     for r in reveals:
         got = digest(r["sealed_record"], r["salt"])
@@ -91,7 +91,7 @@ def check_hashes(reveals: list[dict]) -> int:
 # ---------------------------------------------------------------- C2
 def check_no_deletion(reveals: list[dict], commitments: dict) -> int:
     """A hash that appeared in an older commitments.json but is in neither the current
-    commitments.json nor reveals/ is a call that was quietly dropped — the classic way
+    commitments.json nor reveals/ is an idea that was quietly dropped — the classic way
     a track record is laundered."""
     history = git("log", "-p", "--follow", "--", "commitments.json")
     if not history:
@@ -109,7 +109,7 @@ def check_no_deletion(reveals: list[dict], commitments: dict) -> int:
     missing = ever - live
     for m in sorted(missing):
         fail("C2", f"hash {m[:16]} existed in git history but is in neither "
-                   f"commitments.json nor reveals/ — call was removed")
+                   f"commitments.json nor reveals/ — idea was removed")
     return len(ever)
 
 
@@ -120,7 +120,7 @@ def check_grade_honesty(reveals: list[dict]) -> dict:
 
     A reveal whose hash post-dates its own exit is NOT a failure of this repo — it is
     allowed, and it is exactly what the seed batch is. What IS a failure is such a
-    call presenting itself as proven. So this check does not police history; it
+    idea presenting itself as proven. So this check does not police history; it
     polices the LABEL. grade='pre_committed' must survive git; 'retroactive_seed'
     must be present wherever git cannot back the claim.
     """
@@ -207,7 +207,7 @@ def check_aggregate(reveals: list[dict]) -> dict:
 
 # ---------------------------------------------------------------- C5
 def check_disclosure(commitments: dict) -> int:
-    """Open calls must be unreadable. One stray 'asset' key breaks the VIP promise for
+    """Open ideas must be unreadable. One stray 'asset' key breaks the VIP promise for
     every subscriber at once, so this is a hard failure, not a warning."""
     n = 0
     for c in commitments["commitments"]:
@@ -227,8 +227,8 @@ def check_disclosure(commitments: dict) -> int:
 
 # ---------------------------------------------------------------- C6
 def check_secret_hygiene(reveals: list[dict]) -> None:
-    """Salts for OPEN calls are the thing that makes an open commitment brute-force
-    resistant. If one is ever tracked, the corresponding call is readable."""
+    """Salts for OPEN ideas are the thing that makes an open commitment brute-force
+    resistant. If one is ever tracked, the corresponding idea is readable."""
     tracked = [l for l in git("ls-files").splitlines() if l.strip()]
     revealed_ids = {r["idea_id"] for r in reveals}
     for f in tracked:
@@ -269,7 +269,7 @@ def main() -> int:
                                  f"retroactive_seed (self-reported)"),
             "C4_aggregate_honesty": "performance.json matches reveals/",
             "C5_disclosure": f"{open_n} open commitments, hash-only",
-            "C6_secret_hygiene": "no open-call salts tracked",
+            "C6_secret_hygiene": "no open-idea salts tracked",
         },
         "recomputed": agg,
         "commitment_grades": grades,
