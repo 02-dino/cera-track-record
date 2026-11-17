@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-08-07_001",
+  "commitment_sha256": "1052fbe1c89dd8200445b13de8075d88ca4fe62142ba4012378f5b9027e1b62b",
+  "salt": "945bc5c094cdb9520d7de8d958f41a47",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-08-07_001",
+    "call_date": "2026-08-07",
+    "asset": "SKHY",
+    "direction": "long",
+    "category": "equity",
+    "asymmetric_tier": "high_conviction",
+    "price_at_call": "138.695",
+    "thesis": "Structural memory (DRAM/HBM) shortage thesis converging from multiple independent voices. Meritz's Kim Sunwoo (via aleabitoreddit) argues the market misunderstands semis: H2 2026 suppliers can fulfill only 75-80% of DRAM demand, falling into the 60% range by 2027, with Intel's CEO quoted saying 'no relief in memory supply or pricing until at least 2028.' jukan05 corroborates independently: HBM-dedicated line buildouts in H1 sharply cut absolute commodity DRAM (DDR5/LPDDR5X) capacity, shifting pricing power decisively from set-makers to memory manufacturers as the shortage spreads to commodity DRAM. MU's take-or-pay LTAs point to durable structural demand. Yet SK Hynix trades at ~3.5x 2027 P/E and Samsung ~3.9x - deeply mispriced for a multi-year supply shortage. Long the cheapest structural-shortage beneficiary.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-20x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 102,
+    "realized_return_pct": -10.1,
+    "realized_exit_price": 124.745,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -10.1%. Ditutup dalam AI trade unwind: skandal dan pencopotan Jensen Huang (8 Nov), aturan sementara ekspor chip AI dari Departemen Perdagangan AS (16 Nov). Long AI/semikonduktor 0 dari 12 untung.",
+    "key_events": [],
+    "review_count": 8
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

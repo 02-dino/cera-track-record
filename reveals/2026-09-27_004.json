@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-09-27_004",
+  "commitment_sha256": "0c825e639afaad85f680db1e8c1200bb3a61b7757b3d2c272c0a3df46bb7d10a",
+  "salt": "4379eeb9ff374f8469a3dad486fc942a",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-09-27_004",
+    "call_date": "2026-09-27",
+    "asset": "STONK",
+    "direction": "bearish",
+    "category": "crypto",
+    "asymmetric_tier": "high_conviction",
+    "price_at_call": "0.2805",
+    "thesis": "The most vocal on-record bull on the Robinhood/long.xyz complex disclosed on 2026-09-26 that he sold his entire Stonk ecosystem exposure, stating Stonk is 'slowly losing mindshare and tokens aren't doing well' — that is an insider-of-the-narrative exiting before the broader holder base reprices. The corroborating hard data is in the same author's own chain research: Robinhood Chain daily DEX fees fell from $11.8M on Sept 9 to $6.3M on Sept 22 (roughly -47% in a fortnight) while Solana went 6.7 to 6.9, and his separate analysis concluded the outflowing capital did not rotate to Solana — activity simply stopped. Stonk-ecosystem tokens are therefore losing the fee base that funds their entire buyback/pairing flywheel, which is a mechanical revenue decline, not sentiment. STONK still sits at 28.5 on the trend leaderboard, meaning attention has not yet caught down to the fee collapse — that gap is the trade, and it is a non-FOMO entry because you are shorting a still-discussed name rather than one already marked down.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 51,
+    "realized_return_pct": 84.8,
+    "realized_exit_price": 0.0426,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP +84.8%. Short ditutup untuk mengunci hasil saat seluruh buku call di-unwind.",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

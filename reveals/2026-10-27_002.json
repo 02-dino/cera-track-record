@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-10-27_002",
+  "commitment_sha256": "cb76dab4d4143f699a56d2b6a08d703b206b3e69cf6bf2f345e75e5b7a35c270",
+  "salt": "5289efae61a6197c53ca210dd18b4aeb",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-10-27_002",
+    "call_date": "2026-10-27",
+    "asset": "GFS",
+    "direction": "bullish",
+    "category": "equity",
+    "asymmetric_tier": "low_conviction",
+    "price_at_call": "45.0",
+    "thesis": "GlobalFoundries is modelled by the street as a stranded mature-node foundry with effectively zero AI exposure — that framing is now stale. aleabitoreddit's 19 Oct work names GFS as the reference-design laser platform for CPO/NPO, which puts it inside the one AI bottleneck that cannot be solved with money because laser capacity needs ~3 years of equipment investment to come online. Meanwhile pluggable makers have expanded from 2-3 suppliers to 5-7+ and Innolight is signing 2-3 year contracts to lock upstream capacity, so qualified Western photonics platforms get paid in volume before they get paid in price. The market is missing that a boring 'ex-growth' foundry sits in the silicon-photonics reference stack.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 21,
+    "realized_return_pct": -12.4,
+    "realized_exit_price": 39.42,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -12.4%. Ditutup dalam AI trade unwind: skandal dan pencopotan Jensen Huang (8 Nov), aturan sementara ekspor chip AI dari Departemen Perdagangan AS (16 Nov). Long AI/semikonduktor 0 dari 12 untung.",
+    "key_events": [],
+    "review_count": 4
+  },
+  "commitment_grade": "retroactive_seed",
+  "commitment_grade_note": "No commitment for this call exists in git history prior to this publish: the record was written after the outcome was known. Self-reported, NOT cryptographically proven.",
+  "first_committed": null,
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

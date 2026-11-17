@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-08-14_003",
+  "commitment_sha256": "e1080c5891e87fb32aede35d4e78e98e51a603eb41bb6f9080c9d90a57fdb710",
+  "salt": "dd887205297da3019bebd0f225d23732",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-08-14_003",
+    "call_date": "2026-08-23",
+    "asset": "CRWV",
+    "direction": "long",
+    "category": "equity",
+    "asymmetric_tier": null,
+    "price_at_call": "106.18",
+    "thesis": "CoreWeave is a direct beneficiary of a structural compute shortage that new entrants (Meta, SpaceX) cannot resolve given current buildout plans. jukan05 models revenue of $12.7B/$27.3B/$41.8B for 2026-2028 with adjusted EBITDA of $7.5B/$15.6B/$21.2B and a $172 target (10x 2028 EV/EBITDA). The key differentiator is long-term take-or-pay contracts that give far greater revenue stability than on-demand or short-term rentals, insulating the neocloud model from the competition-and-demand-dispersion fear the market is pricing.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": null
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 95,
+    "realized_return_pct": -42.5,
+    "realized_exit_price": 49.88,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -42.5%. Ditutup dalam AI trade unwind: skandal dan pencopotan Jensen Huang (8 Nov), aturan sementara ekspor chip AI dari Departemen Perdagangan AS (16 Nov). Long AI/semikonduktor 0 dari 12 untung.",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

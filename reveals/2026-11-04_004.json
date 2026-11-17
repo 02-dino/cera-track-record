@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-11-04_004",
+  "commitment_sha256": "aa9cdceacd9dfdcd705409835eefd89f516eced18300d8b982946a6ed7f4b07a",
+  "salt": "41384c0b73c5357e2045726751c15339",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-11-04_004",
+    "call_date": "2026-11-04",
+    "asset": "AEHR",
+    "direction": "bullish",
+    "category": null,
+    "asymmetric_tier": null,
+    "price_at_call": null,
+    "thesis": null,
+    "invalidation_type": null,
+    "return_multiple_range": null
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 13,
+    "realized_return_pct": -21.7,
+    "realized_exit_price": 50.98,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -21.7%. Ditutup dalam AI trade unwind: skandal dan pencopotan Jensen Huang (8 Nov), aturan sementara ekspor chip AI dari Departemen Perdagangan AS (16 Nov). Long AI/semikonduktor 0 dari 12 untung.",
+    "key_events": [],
+    "review_count": 4
+  },
+  "commitment_grade": "retroactive_seed",
+  "commitment_grade_note": "No commitment for this call exists in git history prior to this publish: the record was written after the outcome was known. Self-reported, NOT cryptographically proven.",
+  "first_committed": null,
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

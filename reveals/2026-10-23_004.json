@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-10-23_004",
+  "commitment_sha256": "46be834ff5094ccf0e0c4e245273d64613ec3d0cc8d2df163eb227331568e550",
+  "salt": "eac729fa1f9f4e0b6e85d3ace1591d33",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-10-23_004",
+    "call_date": "2026-10-23",
+    "asset": "BTC",
+    "direction": "bullish",
+    "category": "crypto",
+    "asymmetric_tier": "low_conviction",
+    "price_at_call": "81269.966667",
+    "thesis": "Two independent, non-price-based structural signals converge here. First, holder-behaviour: the pool flags a BTC 'Cooperation regime' — holders coordinating to accept delayed payment rather than distribute — with roughly 17 days left before a model's main allocation triggers, which is a dated, mechanical accumulation catalyst rather than a chart. Second, supply: new token issuance across crypto has collapsed from 26.5% annually in Dec 2021 to 3.3% today, so the marginal-seller pressure that capped prior cycles is an order of magnitude smaller. Layer on the cross-asset rotation argument — equities are rolling over off a 2-year-plus bull run while crypto has already cleansed leverage — and you get the non-consensus pairing of equity-down/crypto-up at a moment when everyone is treating the AI capex unwind as a risk-off event for all risk assets.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 25,
+    "realized_return_pct": -20.3,
+    "realized_exit_price": 64761.5,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -20.3%. Ditutup dalam unwind seluruh buku call. Long kripto ikut turun bersama pasar (BTC ~$64,8 ribu).",
+    "key_events": [],
+    "review_count": 4
+  },
+  "commitment_grade": "retroactive_seed",
+  "commitment_grade_note": "No commitment for this call exists in git history prior to this publish: the record was written after the outcome was known. Self-reported, NOT cryptographically proven.",
+  "first_committed": null,
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

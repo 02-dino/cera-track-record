@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-08-31_001",
+  "commitment_sha256": "5f430fdf5c61c0359ec3fd5f61c92d6387941d18db277a69ddfa7309633e8231",
+  "salt": "85bee6a20c03ae3b3442d8033ba3997f",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-08-31_001",
+    "call_date": "2026-08-31",
+    "asset": "COHR",
+    "direction": "bullish",
+    "category": "equity",
+    "asymmetric_tier": "high_conviction",
+    "price_at_call": "274.56",
+    "thesis": "Coherent Corp is the optical components supplier whose own management stated 'fiscal 2027 is basically completely booked out… booked really through the end of calendar 2027' with LTAs spanning end of decade. The market continues to debate whether CPO demand will be pushed out, yet COHR management explicitly stated 'absolutely no push-out of CPO demand — in fact it has been the opposite.' The bottleneck is exclusively at the indium phosphide production ramp, not assembly/test, meaning near-term supply constraint is structural and pricing power is real. AAOI is already widely covered and in the blocklist; COHR as the 'big 3' OEM with the highest backlog visibility is underappreciated on a per-share basis versus AI infrastructure beneficiaries upstream.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 78,
+    "realized_return_pct": -25.9,
+    "realized_exit_price": 203.43,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -25.9%. Ditutup dalam AI trade unwind: skandal dan pencopotan Jensen Huang (8 Nov), aturan sementara ekspor chip AI dari Departemen Perdagangan AS (16 Nov). Long AI/semikonduktor 0 dari 12 untung.",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

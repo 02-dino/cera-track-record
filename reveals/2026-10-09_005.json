@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-10-09_005",
+  "commitment_sha256": "5e5ec5727833c3df758e60758da6645d1b1c5f13dff200822980cbe3e55e9c87",
+  "salt": "7b9327cb01afeb3b95423c1bf6048f8c",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-10-09_005",
+    "call_date": "2026-10-09",
+    "asset": "LINK",
+    "direction": "bullish",
+    "category": "crypto",
+    "asymmetric_tier": "low_conviction",
+    "price_at_call": "12.800667",
+    "thesis": "Four Pillars' Week 39 weekly reports two things the market read as one bearish event: the CLARITY Act failed its Senate procedural vote, and the SEC announced an 'Innovation Exemption' opening onchain trading of tokenized stocks. The consensus takeaway was 'legislation dead, tokenization delayed'; the non-consensus read is that an administrative exemption delivers the same permission faster and without needing 60 Senate votes, and Four Pillars separately argues Korea is the first clean test case for sovereign debt tokenization. Tokenized equities and sovereign debt cannot settle without off-chain price and proof-of-reserve attestation, which is a narrow infrastructure chokepoint rather than a broad L1 bet — RWA already registers 42.0 in today's trend set while the oracle layer that must carry it does not. Why now: the exemption is live regulatory permission, so the first tokenized-stock venues integrate in the next one to two quarters.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 39,
+    "realized_return_pct": -28.7,
+    "realized_exit_price": 9.124167,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -28.7%. Ditutup dalam unwind seluruh buku call. Long kripto ikut turun bersama pasar (BTC ~$64,8 ribu).",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

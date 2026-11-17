@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-10-10_002",
+  "commitment_sha256": "946d10b6ad976039c0b90eb95504144e08e3677f2666c4e4a0723b16b9a1d388",
+  "salt": "e0a7c863f19be2901fa897e0c434b878",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-10-10_002",
+    "call_date": "2026-10-10",
+    "asset": "DELTA",
+    "direction": "bullish",
+    "category": "equity",
+    "asymmetric_tier": "high_conviction",
+    "price_at_call": "1965.0",
+    "thesis": "Korean press via jukan05 (2026-10-09) reports Samsung Electro-Mechanics is close to a KRW 700bn MLCC long-term agreement to supply Delta Electronics. That detail has been almost entirely ignored because everyone read the same article for the Samsung memory LTA headline (75-80% of next year's supply volume already contracted). An MLCC LTA of that size is a component buyer pre-committing to multi-year volume — it is a leading indicator of Delta's own AI power-electronics unit shipments, disclosed by its supplier rather than by Delta. You are getting the customer's forward volume signal from the supply side before it appears in guidance.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 38,
+    "realized_return_pct": -45.8,
+    "realized_exit_price": 1065.0,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -45.8%. Ditutup dalam AI trade unwind 17 Nov. Sempat terhapus dari ledger pagi itu dan dikembalikan karena call ini sudah ter-commit di track record.",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-10-07_005",
+  "commitment_sha256": "896471dbd50c2e8b1bf2aa0d0aadb6f03f02d62f2f30df671b87258e27a898f2",
+  "salt": "063b9418951c70b39e7a8dfabee649ea",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-10-07_005",
+    "call_date": "2026-10-07",
+    "asset": "VVV",
+    "direction": "bullish",
+    "category": "crypto",
+    "asymmetric_tier": "low_conviction",
+    "price_at_call": "26.524333",
+    "thesis": "The most-cited positioning author in this corpus names a specific upside set for this cycle - ZEC $5k+, HYPE $250+, VVV $100+, PUMP $0.20 - and of that list VVV is the one with the least crowded narrative and the lowest attention score (30.0 on today's trend board versus ZEC at 33.0 and AI at 181.0). The structural argument is mechanical rather than vibes-based: the strongest alts always get the rotation back after attention vamps elsewhere, so the edge is holding through the dead period that shakes out leveraged participants, and the only way to capture a 5-10x is spot. Non-FOMO by construction - the entry is during the underperformance window, not the lockout trend. The prior example cited is PUMP, which doubled off the bottom while nobody owned it and was then forgotten within weeks.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 41,
+    "realized_return_pct": -23.1,
+    "realized_exit_price": 20.404,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -23.1%. Ditutup dalam unwind seluruh buku call. Long kripto ikut turun bersama pasar (BTC ~$64,8 ribu).",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

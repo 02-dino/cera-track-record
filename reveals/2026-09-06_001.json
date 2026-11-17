@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-09-06_001",
+  "commitment_sha256": "7ca20d2d88b437614edcd5f00540a9aad9a6a85b2c2dd95c234c8f3fbd9b391d",
+  "salt": "fc0970acb4c308c3180a9fe08d9d9366",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-09-06_001",
+    "call_date": "2026-09-06",
+    "asset": "MU",
+    "direction": "bullish",
+    "category": "equity",
+    "asymmetric_tier": "low_conviction",
+    "price_at_call": "1017.055",
+    "thesis": "Phison's CEO flags 2027 NAND capacity constraints as more severe than 2026, with 4-year lead times from plant construction to production against explosively growing demand. Micron is a core NAND/DRAM player not caught in the crowded SNDK/SKHY trade the market is already piling into, giving a cleaner entry into the same structural shortage. The consensus 'memory is over' narrative is fighting a multi-year supply/demand imbalance the supply side physically cannot close before 2027.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 72,
+    "realized_return_pct": -29.3,
+    "realized_exit_price": 719.02,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -29.3%. Ditutup dalam AI trade unwind: skandal dan pencopotan Jensen Huang (8 Nov), aturan sementara ekspor chip AI dari Departemen Perdagangan AS (16 Nov). Long AI/semikonduktor 0 dari 12 untung.",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

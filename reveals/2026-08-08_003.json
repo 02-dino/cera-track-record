@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-08-08_003",
+  "commitment_sha256": "4c1d4d74ac7677e66d1f1c9ee9973747508b56245995f4a58344bf82345b666f",
+  "salt": "08a65d251202a3b761e82062b972c3d3",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-08-08_003",
+    "call_date": "2026-08-26",
+    "asset": "SNDK",
+    "direction": "long",
+    "category": "equity",
+    "asymmetric_tier": null,
+    "price_at_call": "1216.545",
+    "thesis": "The HBM buildout is cannibalizing commodity DRAM (DDR5, LPDDR5X) capacity, and the shortage is now spreading from HBM into commodity memory — power has shifted decisively from set-makers to memory manufacturers, ending Big Tech's cheap-panel/cheap-memory workaround. jukan05 and aleabitoreddit converge on structural, accelerating memory demand (hyperscaler LTAs with SanDisk/SNDK, Samsung, SK Hynix, Micron) driven by AI capex, with the key tell being accelerating revenue/EPS in line with hyperscaler capex rather than sentiment. SNDK is a direct beneficiary of the commodity-memory shortage spillover and is not blocklisted (unlike SKHY). Long the structural memory-shortage leg.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": null
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 101,
+    "realized_return_pct": -45.4,
+    "realized_exit_price": 809.11,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -45.4%. Ditutup dalam AI trade unwind: skandal dan pencopotan Jensen Huang (8 Nov), aturan sementara ekspor chip AI dari Departemen Perdagangan AS (16 Nov). Long AI/semikonduktor 0 dari 12 untung.",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

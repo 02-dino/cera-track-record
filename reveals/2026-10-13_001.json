@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-10-13_001",
+  "commitment_sha256": "3e0cc77999d9531e009f604f5dd8fe2d9e19beab2c58441d12aee36046135261",
+  "salt": "1f24237849eb79a3953cbb1b81d72bf4",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-10-13_001",
+    "call_date": "2026-10-13",
+    "asset": "BP",
+    "direction": "bearish",
+    "category": "crypto",
+    "asymmetric_tier": "high_conviction",
+    "price_at_call": "1.25",
+    "thesis": "Backpack's token is being marketed as 'progressive' structure while the actual mechanics, spelled out by Evan_ss6 after direct clarification from the team, give liquid unstaked tokens a claim on nothing at all. Only tokens staked 4+ years get an option to convert into a MAXIMUM of 20% of equity, and unstaking to realise liquidity destroys the conversion right - so the claim and the liquidity are mutually exclusive by construction. At $1.25 with ~62.5% of supply circulating by IPO, buyers are paying a ~$4B valuation pre-IPO-dilution for that option, while the equity entity sits on 37.5% of tokens in reserve unlocking one year after. The market is missing that 2026 comparables (Hyperliquid, Lighter) accrue all value to the token, so BP is being underwritten on a 2024 mental model that its own documents contradict, and the promoters have declined to publish revenue numbers that would let anyone underwrite it properly.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 35,
+    "realized_return_pct": 0.0,
+    "realized_exit_price": 1.25,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP +0.0%. Short ditutup untuk mengunci hasil saat seluruh buku call di-unwind.",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

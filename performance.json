@@ -1,28 +1,30 @@
 {
   "schema": 1,
   "basis": "closed_calls_only",
-  "n_closed": 6,
-  "n_priced": 6,
-  "wins": 6,
-  "losses": 0,
-  "scratch": 0,
-  "win_rate": 1.0,
-  "avg_return_pct": 303.7,
+  "n_closed": 40,
+  "n_priced": 39,
+  "wins": 10,
+  "losses": 28,
+  "scratch": 1,
+  "win_rate": 0.2564,
+  "avg_return_pct": 26.93,
   "best_pct": 1343.34,
-  "worst_pct": 23.83,
-  "sum_win_pct": 1822.18,
-  "sum_loss_pct": 0,
-  "profit_factor": null,
+  "worst_pct": -80.2,
+  "sum_win_pct": 2034.38,
+  "sum_loss_pct": 984.11,
+  "profit_factor": 2.07,
   "exit_basis_breakdown": {
-    "owner_directed_peak_close": 6
+    "owner_directed_unwind": 33,
+    "owner_directed_peak_close": 6,
+    "voided_no_entry_price": 1
   },
   "commitment_grade_breakdown": {
-    "retroactive_seed": 6
+    "pre_committed": 26,
+    "retroactive_seed": 14
   },
   "caveats": [
-    "6/6 closed calls are commitment_grade='retroactive_seed': their hash was first published AFTER the exit was known, so they are SELF-REPORTED history, not cryptographic evidence. Only calls committed while still open can be proven. Read them as the desk's own account.",
-    "ZERO measured losses in the closed book. A 100% win rate here is NOT a hit rate — read the exit_basis breakdown below before quoting it.",
-    "6/6 closed calls used exit_basis='owner_directed_peak_close' — exited by hand at a favourable point, not by a pre-written trigger. Returns are therefore exit-timing dependent.",
-    "Sample is 6 closed calls. Too small for profit factor or expectancy to be stable; treat as a log, not a statistic."
+    "14/40 closed calls are commitment_grade='retroactive_seed': their hash was first published AFTER the exit was known, so they are SELF-REPORTED history, not cryptographic evidence. Only calls committed while still open can be proven. Read them as the desk's own account.",
+    "6/40 closed calls used exit_basis='owner_directed_peak_close' — exited by hand at a favourable point, not by a pre-written trigger. Returns are therefore exit-timing dependent.",
+    "1 committed call(s) VOIDED for having no verifiable entry price (2026-10-11_004). Revealed in full rather than dropped, but excluded from returns because no return can be measured without an entry."
   ]
 }

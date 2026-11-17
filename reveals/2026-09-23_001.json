@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-09-23_001",
+  "commitment_sha256": "41026b8ea3bfabd00943dd76d21750c1eabb9bd3136dbbaaeaa8200a1a2d568d",
+  "salt": "667980c2dd72e209ab2c7f2231a9008f",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-09-23_001",
+    "call_date": "2026-09-23",
+    "asset": "ARB",
+    "direction": "bullish",
+    "category": "crypto",
+    "asymmetric_tier": "high_conviction",
+    "price_at_call": "0.243837",
+    "thesis": "Every dollar of Robinhood Chain revenue pays Arbitrum a 10% Orbit fee, and the entire market has spent the last week debating what that revenue means for HOOD while ignoring who collects the toll. At the trailing-30d annualized run rate of $408m the Orbit royalty is roughly $41m/yr, at the last-7d rate of $298m it is ~$30m/yr, and at the Sep 14 single-day annualized rate of $147m it is ~$15m/yr - an uncapped call option on a chain that already out-earns Robinhood's entire crypto arm ($400m annualized) within months of launch. Citizens' 2027 base case of $365m implies the royalty keeps compounding even under sell-side conservatism, and Vlad's team has every incentive to accelerate a product that prints this much. The market is pricing the operator and not the landlord.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 55,
+    "realized_return_pct": -45.8,
+    "realized_exit_price": 0.132097,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -45.8%. Ditutup dalam unwind seluruh buku call. Long kripto ikut turun bersama pasar (BTC ~$64,8 ribu).",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-08-10_002",
+  "commitment_sha256": "c79e54f25883cfeefb83293de5765d069a3a248c8d6fa2b330d067be76dc769c",
+  "salt": "3ad7ebd090c3a555d3cd883118f445dd",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-08-10_002",
+    "call_date": "2026-08-23",
+    "asset": "AAOI",
+    "direction": "long",
+    "category": "equity",
+    "asymmetric_tier": null,
+    "price_at_call": "140.335",
+    "thesis": "Applied Optoelectronics ($AAOI) is the more-consensus expression of the same optical-interconnect scarcity: it explicitly cited a +20-40% demand imbalance for transceivers with lasers as the bottleneck, and noted it had no meaningful participation in first-gen CPO deployments because its lasers are being allocated to transceivers -- a signal that demand is outrunning its own supply. Stacked with the US proposal to ban Chinese transceiver suppliers (Innolight/Eoptolink) and GlobalWafers' acknowledged wafer shortage, AAOI has a clean capacity-demand-absorption tailwind into AI datacenter buildout. This is a sharper, more-covered catalyst-driven name than SIVE, hence a leveraged long expression rather than accumulation.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": null
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 99,
+    "realized_return_pct": -58.8,
+    "realized_exit_price": 45.16,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -58.8%. Ditutup dalam AI trade unwind: skandal dan pencopotan Jensen Huang (8 Nov), aturan sementara ekspor chip AI dari Departemen Perdagangan AS (16 Nov). Long AI/semikonduktor 0 dari 12 untung.",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

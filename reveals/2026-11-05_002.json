@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-11-05_002",
+  "commitment_sha256": "cf7e3cb5fbb69bc24b43fc1be40f02f2582388249f59f768193f9617640b3396",
+  "salt": "e69d43623a43c425e7a5f45dbb48c7fd",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-11-05_002",
+    "call_date": "2026-11-05",
+    "asset": "XMR",
+    "direction": "bullish",
+    "category": null,
+    "asymmetric_tier": null,
+    "price_at_call": null,
+    "thesis": null,
+    "invalidation_type": null,
+    "return_multiple_range": null
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 12,
+    "realized_return_pct": -22.4,
+    "realized_exit_price": 494.8,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -22.4%. Ditutup dalam unwind seluruh buku call. Long kripto ikut turun bersama pasar (BTC ~$64,8 ribu).",
+    "key_events": [],
+    "review_count": 3
+  },
+  "commitment_grade": "retroactive_seed",
+  "commitment_grade_note": "No commitment for this call exists in git history prior to this publish: the record was written after the outcome was known. Self-reported, NOT cryptographically proven.",
+  "first_committed": null,
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

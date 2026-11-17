@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-09-03_003",
+  "commitment_sha256": "891eee525c9f1545e2d8de4df402075b5c714d47b471dd963def764e3bc7c75f",
+  "salt": "abc53b3b7f6ea30880171370ff9fcbdc",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-09-03_003",
+    "call_date": "2026-09-03",
+    "asset": "NVDA",
+    "direction": "bullish",
+    "category": "equity",
+    "asymmetric_tier": "high_conviction",
+    "price_at_call": "224.965",
+    "thesis": "The optical supply chain feeding NVDA's AI infrastructure buildout is booked through end of calendar 2027 per multiple CEO transcripts: Coherent ('fiscal 2027 completely booked out'), AOI + Coherent combined 'still very tough to meet customer demand next 3 years,' Elazr GM ('entire optical supply chain facing major shortages'). CPO/1.6T and NPO scale-out has not yet hit inflection — NVDA benefits as the bottleneck shifts from packaging/test (resolved) to InP laser production (unresolved, years-long). Market consensus treats NVDA's upside as already priced; the CPO inflection and 1.6T transition are a second wave not yet in estimates.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 75,
+    "realized_return_pct": -30.6,
+    "realized_exit_price": 156.14,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -30.6%. Ditutup dalam AI trade unwind: skandal dan pencopotan Jensen Huang (8 Nov), aturan sementara ekspor chip AI dari Departemen Perdagangan AS (16 Nov). Long AI/semikonduktor 0 dari 12 untung.",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

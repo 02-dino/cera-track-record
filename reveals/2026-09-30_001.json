@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-09-30_001",
+  "commitment_sha256": "c04672abdb461fb4c77bee17d211eec00d4cce33d290f96d881aab00023145a4",
+  "salt": "456232b6f8ef0d56c27d55f5d5bc0bd0",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-09-30_001",
+    "call_date": "2026-09-30",
+    "asset": "BUN",
+    "direction": "bullish",
+    "category": "crypto",
+    "asymmetric_tier": "high_conviction",
+    "price_at_call": "0.08898",
+    "thesis": "The market is pricing BUN as 'just another launchpad meme', which is precisely the disguise kiototrades flagged on 2026-09-26: BUN is the native token of the mosh launchpad built as a layer on top of pons, and the founders publicly state it is the only way to get exposure to the mosh ecosystem, with stated intent to connect it to parent company UV's equity. The mechanical detail consensus is missing is the float: roughly 70% of supply sits with agentic market makers (a share that grows over time, making the token structurally deflationary) and another 10% is locked in the pons locker, leaving only ~20% float against a ~$10M reported cap — so the effective tradable supply is a fraction of what screeners show. Vault-fillers are already up 100x and earn trading fees in perpetuity, which means there is a monetizable trade before a token even launches and gives reputable devs a sniper-resistant venue, i.e. a real reason for deal flow to route here. kiototrades disclosed on 2026-09-28 he is already up 2x from entry and still adding, and the AI precedent shows how a 'disguised native token' reprices once the market notices the fee plumbing.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "5x-50x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 48,
+    "realized_return_pct": -80.2,
+    "realized_exit_price": 0.01764,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -80.2%. Ditutup dalam unwind seluruh buku call. Long kripto ikut turun bersama pasar (BTC ~$64,8 ribu).",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

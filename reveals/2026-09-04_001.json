@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-09-04_001",
+  "commitment_sha256": "2017a7af730a2680aae85e558768a0d0bc07dcf63b107a37d3c96b5162d73e02",
+  "salt": "0283aa4520233bd695dace114e122e08",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-09-04_001",
+    "call_date": "2026-09-04",
+    "asset": "HYPE",
+    "direction": "bullish",
+    "category": "crypto",
+    "asymmetric_tier": "high_conviction",
+    "price_at_call": "87.23",
+    "thesis": "Hyperliquid (HYPE) holds a structural edge in perp-DEX competition via the 'Funded vs Borrowed' dynamic: organic fee revenue is recycled back to HYPE holders, while competitor liquidity is rented and exits at the first sign of stress. The market continues to underweight this flywheel because it lacks the marketing surface of CEX-backed alternatives. that1618guy's 'The crowded book' report documents this playing out in real time, and HYPE remains his primary pick heading into the next cycle as of August 19, 2026. Structural moat (self-funded liquidity) + under-covered narrative = mispricing vs funded peers.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "5x-50x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 74,
+    "realized_return_pct": -20.7,
+    "realized_exit_price": 69.142667,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -20.7%. Ditutup dalam unwind seluruh buku call. Long kripto ikut turun bersama pasar (BTC ~$64,8 ribu).",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

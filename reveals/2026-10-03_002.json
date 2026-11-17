@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-10-03_002",
+  "commitment_sha256": "cfdab532a4727e9b3262b466e234f3b5b6f899d46820e4ea2be3a8382f384116",
+  "salt": "fbbbdf766d161cd30dffb0be5e38d37b",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-10-03_002",
+    "call_date": "2026-10-03",
+    "asset": "PONS",
+    "direction": "bullish",
+    "category": "crypto",
+    "asymmetric_tier": "high_conviction",
+    "price_at_call": "0.441837",
+    "thesis": "Two independent facts have not been connected by the market. First, mosh - a new launchpad layer built on top of PONS with a vault-prefund mechanism, ~70% of launched supply routed to agentic market makers and fees paid back to vault fillers - is actively onboarding projects, and its eco token BUN already ran 100x for early vault fillers at only ~$10M effective market cap with 20% float. Second, Loracle, who had been short PONS, fully closed that short on 2026-09-18 and rotated long into STRK and ETH while withdrawing $73M of HYPE exposure. PONS is the settlement layer that captures flow from every mosh launch, yet attention and price are being paid to the derivative token (BUN) and not the base layer, while the most informed bear on the venue has already stepped off the trade. This is the same 'disguised infra bet' structure that worked on AI as the de-facto native token of LONG, one layer lower in the stack and with far less crowding.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "5x-50x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 45,
+    "realized_return_pct": -72.9,
+    "realized_exit_price": 0.11957,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -72.9%. Ditutup dalam unwind seluruh buku call. Long kripto ikut turun bersama pasar (BTC ~$64,8 ribu).",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

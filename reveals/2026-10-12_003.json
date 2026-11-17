@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-10-12_003",
+  "commitment_sha256": "216296894efe740ed18200b835fc358af21a07e06aeb27bc34fb954d2b8806a2",
+  "salt": "46c45849c6ef3ddc454ee993137d0b05",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-10-12_003",
+    "call_date": "2026-10-12",
+    "asset": "KIOXIA",
+    "direction": "bullish",
+    "category": "equity",
+    "asymmetric_tier": "high_conviction",
+    "price_at_call": "109.515",
+    "thesis": "jukan05 relayed on 2026-10-05 that China's YMTC - a NAND producer with every incentive to talk supply up, not down - told The Wire China it expects the NAND shortage to last another three years. When the marginal low-cost competitor publicly concedes a three-year shortage, the sell-side model of NAND oversupply by end-2027 is simply wrong. TrendForce corroborates from the other side: DRAM scarcity is capping NAND suppliers' enterprise SSD output, keeping eSSD undersupplied through 2026. Kioxia is the highest-beta listed NAND pure-play and is still valued on a mid-cycle multiple rather than a three-year contract-price ramp.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 36,
+    "realized_return_pct": -54.81,
+    "realized_exit_price": 49.494,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -54.8%. Ditutup dalam AI trade unwind 17 Nov. Sempat terhapus dari ledger pagi itu dan dikembalikan karena call ini sudah ter-commit di track record.",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

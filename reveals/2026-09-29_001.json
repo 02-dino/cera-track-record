@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-09-29_001",
+  "commitment_sha256": "4cb8d582e75d4e40f8582d24ac23a6ccf55d80472167c8e36b528c9bc1b2e9c9",
+  "salt": "e0fdb975f607af5eef81f0e3679e685e",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-09-29_001",
+    "call_date": "2026-09-29",
+    "asset": "ENA",
+    "direction": "bullish",
+    "category": "crypto",
+    "asymmetric_tier": "high_conviction",
+    "price_at_call": "0.251683",
+    "thesis": "The market is valuing ENA off the corpse of its old business: USDe market cap peaked near $15b around Oct 2025 and has bled to roughly $4-5b by mid-2026, so consensus reads Ethena as a dead crypto-perp basis trade with decaying funding. What that misses is the input change flagged by no_alfa_here on 2026-09-26 — farming basis on EQUITY perps (HIP-3 style venues) rather than crypto perps, which scales with listed-equity float instead of crypto open interest, has structurally lower funding volatility, and is positively skewed because equity funding is persistently long-biased. If equity-perp collateral becomes a meaningful share of USDe backing, the yield stops being a crypto-beta function and starts being a carry function, which is a different and far higher multiple. Nobody is repricing that yet because the headline USDe chart still points down.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 49,
+    "realized_return_pct": -54.6,
+    "realized_exit_price": 0.11428,
+    "max_drawdown_pct": null,
+    "exit_basis": "owner_directed_unwind",
+    "exit_trigger_fired": true,
+    "thesis_accuracy": "closed_by_owner",
+    "catalyst_status": "occurred",
+    "thesis_note": "DITUTUP -54.6%. Ditutup dalam unwind seluruh buku call. Long kripto ikut turun bersama pasar (BTC ~$64,8 ribu).",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}

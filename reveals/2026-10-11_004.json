@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "idea_id": "2026-10-11_004",
+  "commitment_sha256": "217b9ab1ffcfa8098cb820a185d205829173c10116b64450ff8becbc625fabaa",
+  "salt": "c540ea259bd10e246c426e715167eb41",
+  "sealed_record": {
+    "schema": 1,
+    "idea_id": "2026-10-11_004",
+    "call_date": "2026-10-11",
+    "asset": "SEMCO",
+    "direction": "bullish",
+    "category": "equity",
+    "asymmetric_tier": "high_conviction",
+    "price_at_call": null,
+    "thesis": "Korean press relayed by jukan05 on 2026-10-09 reports Samsung Electro-Mechanics is close to signing a KRW 700bn long-term agreement to supply MLCCs to Delta Electronics. The market read this as a Delta story; the revenue recognition sits with SEMCO, and the structural signal is the contract form, not the customer — the same report says Samsung Electronics has already locked 75-80% of next year's memory supply volume (including HBM) under LTAs with NVIDIA, Google and Microsoft, with SK hynix and Micron following. Component supply across the AI stack is converting from spot pricing to multi-year take-or-pay, which collapses the cyclicality discount that Korean component names trade at. A KRW 700bn LTA de-risks a meaningful slice of forward MLCC volume before anyone reprices the multiple. Invalidation: the LTA is not signed, or signed at a volume/price materially below the reported KRW 700bn.",
+    "invalidation_type": "fundamental",
+    "return_multiple_range": "2x-10x"
+  },
+  "outcome": {
+    "exit_date": "2026-11-17",
+    "days_held": 37,
+    "realized_return_pct": null,
+    "realized_exit_price": null,
+    "max_drawdown_pct": null,
+    "exit_basis": "voided_no_entry_price",
+    "exit_trigger_fired": null,
+    "thesis_accuracy": null,
+    "catalyst_status": null,
+    "thesis_note": "DIBATALKAN: tidak ada harga masuk yang bisa diverifikasi (bursa tidak terbaca). Tidak dihitung di performa.",
+    "key_events": [],
+    "review_count": 5
+  },
+  "commitment_grade": "pre_committed",
+  "commitment_grade_note": "Commitment hash present in git history since 2026-10-15, before exit 2026-11-17. Independently checkable.",
+  "first_committed": "2026-10-15T21:03:33+07:00",
+  "verify": "sha256(canonical_json(sealed_record) + '|' + salt) == commitment_sha256; check git log for when this hash first appeared in commitments.json"
+}
