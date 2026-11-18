@@ -1,6 +1,6 @@
-# cera-track-record
+# cera-trade-ideas
 
-Tamper-evident trade-idea ledger for the Cera / KomuniTech alpha desk.
+Cera trade ideas: tamper-evident trade-idea ledger for the Cera / KomuniTech alpha desk.
 
 **Disclosure policy (VIP-first):**
 
